@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply h-screen w-screen overflow-hidden bg-gradient-to-tr from-[#bdc3c7] to-[#2c3e50] 
+        !scrollbar-thumb-[#80809f] !scrollbar-thumb-rounded-full !scrollbar-thin;
+  }
+  h1 {
+    @apply uppercase justify-center items-center text-gray-300 tracking-[2rem];
+  }
+}
+
+@layer components {
+  .brand {
+    @apply flex items-center justify-center gap-1;
+  }
+  .inputForm {
+    @apply block px-3 py-1.5 text-base font-normal bg-[#9999bf] text-gray-800 bg-clip-padding
+        border border-solid rounded  placeholder-gray-600 transition ease-in-out border-purple-400 
+        focus:border-purple-300 focus:ring-purple-400 focus:outline-none;
+  }
+  .textLogin {
+    @apply items-center justify-center mx-auto uppercase text-xl;
+  }
+  .registerButton {
+    @apply uppercase bg-purple-500 hover:bg-purple-400 text-gray-300 font-bold py-2 
+        px-4 border-b-4 border-purple-700 hover:border-purple-500 rounded bg-clip-padding;
+  }
+  .avatarselect {
+    @apply flex uppercase items-center justify-center mx-auto
+       bg-purple-500 hover:bg-purple-400 text-gray-300 
+        font-bold py-2 px-5 border-b-4 border-purple-400 hover:border-purple-500 rounded;
+  }
+  .container {
+    @apply h-screen w-screen flex items-center mx-auto justify-center py-12 px-4 sm:px-6 lg:px-8;
+  }
+  .Input {
+    @apply block w-full  bg-[#9999bf]  placeholder-gray-600 text-sm rounded-lg text-gray-800 
+        border bg-clip-padding transition ease-in-out duration-150 border-purple-400 focus:outline-none
+        focus:ring-purple-400 focus:border-purple-300;
+  }
+  .userPhoto {
+    @apply rounded-full object-cover items-center;
+  }
+  .registerPage {
+    @apply text-slate-500 px-6 py-8 h-screen w-screen mx-auto flex flex-col justify-center items-center;
+  }
+  .bgRelative {
+    @apply relative w-full bg-[#b3b3df];
+  }
+  .inputAnimation {
+    @apply text-[#DFDFB3] transition ease-in-out duration-100;
+  }
+  .scrollbarDesign {
+    @apply scrollbar-thumb-[#80809f] scrollbar-thumb-rounded-full scrollbar-thin;
+  }
+}
