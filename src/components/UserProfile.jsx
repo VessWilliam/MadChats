@@ -52,11 +52,11 @@ export default function UserProfile() {
               <img
                 src={chats[1].userInfo?.photoURL}
                 alt="profile"
-                className="h-12 w-12 userPhoto"
+                className="h-10 w-10 lg:12 lg:12 userPhoto"
               />
 
               <div className="flex-col mx-auto relative gap-5 ml-2 items-center justify-center">
-                <span className="flex text-lg text-gray-800 capitalize font-semibold">
+                <span className="flex text-sm lg:text-lg text-gray-800 capitalize font-semibold">
                   {chats[1].userInfo?.displayName}
                 </span>
                 <p className="text-sm text-slate-600">

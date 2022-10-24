@@ -59,18 +59,18 @@ export default function SetAvatar() {
       {isLoading ? (
         <div
           className="flex items-center justify-center 
-    mx-auto h-screen w-screen"
+                mx-auto min-h-screen min-w-screen"
         >
           <img
             src={loader}
             alt=""
-            className="w-36 h-36 object-cover object-center block"
+            className="w-20 h-20 object-cover object-center block"
           />
         </div>
       ) : (
-        <div className="flex flex-col items-center justify-center mx-auto h-screen w-screen">
-          <div className="relative mt-24 bottom-3 px-8 mx-auto pb-2 tracking-[1rem]">
-            <h2 className="uppercase text-slate-400 ">Please pick an Avatar</h2>
+        <div className="flex flex-col items-center justify-center mx-auto min-h-screen min-w-screen">
+          <div className="relative py-4 px-4 mx-auto tracking-[0.5rem]">
+            <h2 className="uppercase text-slate-400 text-sm md:text-lg lg:text-xl ">Pick Your's Avatar</h2>
           </div>
           <div>
             <form className="space-y-6 mt-3" onSubmit={handleFormSubmit}>
@@ -80,7 +80,7 @@ export default function SetAvatar() {
                     key={index}
                     className="mx-auto flex items-center justify-center"
                   >
-                    <div className="w-full md:p-2 p-1">
+                    <div className="w-full p-2">
                       <img
                         className={className(
                           index === selectAvatar

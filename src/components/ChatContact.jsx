@@ -5,7 +5,7 @@ export default function ChatContact() {
   return (
     <div className='relative flex
      items-center justify-between
-     overflow-auto h-[4rem] lg:h-[6rem] pt-1 px-5'>
+     overflow-auto h-[4rem] md:h-[5rem] lg:h-[6rem] pt-2 px-3'>
         <UserBottom/>   
         <Logout/>
     </div>

@@ -9,7 +9,7 @@
         !scrollbar-thumb-[#80809f] !scrollbar-thumb-rounded-full !scrollbar-thin;
   }
   h1 {
-    @apply uppercase justify-center items-center text-gray-300 tracking-[2rem];
+    @apply uppercase justify-center items-center text-gray-300 tracking-[1rem];
   }
 }
 
@@ -23,7 +23,7 @@
         focus:border-purple-300 focus:ring-purple-400 focus:outline-none;
   }
   .textLogin {
-    @apply items-center justify-center mx-auto uppercase text-xl;
+    @apply items-center justify-center mx-auto uppercase text-sm md:text-lg lg:text-xl;
   }
   .registerButton {
     @apply uppercase bg-purple-500 hover:bg-purple-400 text-gray-300 font-bold py-2 

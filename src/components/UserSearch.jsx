@@ -7,9 +7,9 @@ export default function UserSearch({ user }) {
           <img
             src={user.photoURL}
             alt="profile"
-            className="userPhoto h-10 w-10"
+            className="userPhoto h-8 w-8"
           />
-          <span className="block gap-2 text-lg text-black font-semibold">
+          <span className="block gap-3 pt-1 text-sm lg:text-lg text-black">
             {user.username}
           </span>
         </div>

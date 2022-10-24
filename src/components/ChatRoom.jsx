@@ -6,20 +6,20 @@ export default function ChatRoom() {
   const { data } = useChat();
   console.log(data);
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <div
-        className="p-6 h-[3rem] md:[5rem] lg:h-[5rem]
-           bgRelative lg:bg-[#80809f] border-b shadow-md border-[#9999bf] flex "
+        className=" py-2 h-[2rem] md:h-[4rem] lg:h-[5rem]
+           bgRelative lg:bg-[#80809f] border-b shadow-md border-[#9999bf]  hidden md:flex lg:flex "
       >
         <img
           src={data.user.photoURL}
-          className="hidden lg:flex h-10 w-10 lg:rounded-full object-cover"
+          className="hidden md:flex lg:flex pl-2 h-15 w-15 lg:rounded-full object-cover"
           alt="avatar"
         />
 
         <span
           className="relative
-           bottom-3 px-3 text-xl text-gray-100 
+           bottom-3 px-3 pt-2 text-xl text-gray-100 
            lg:text-gray-200 lg:text-2xl lg:bottom-0 lg:top-1 
            capitalize underline"
         >

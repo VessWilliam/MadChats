@@ -27,7 +27,7 @@ export default function Message() {
     
   return (
    <div className='bgRelative p-2 overflow-y-auto scrollbarDesign
-    lg:h-[28rem] md:h-[17rem] h-[17rem] '>
+    lg:h-[20rem] md:h-[18rem] h-[14rem]'>
        <ul className='space-y-3'>
            {
            message.map((messages) => (

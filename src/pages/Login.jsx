@@ -64,7 +64,7 @@ function Registered() {
       <div className="registerPage">
         <Brands />
         <form
-          className="flex flex-col gap-2 w-[400px] h-[400px] rounded py-12 "
+          className="flex flex-col gap-2  w-[18rem] md:w-[25rem] lg:w-[25rem] h-[20rem] rounded py-6 "
           onSubmit={(event) => handleSubmit(event)}
         >
           <input

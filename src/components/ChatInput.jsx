@@ -80,11 +80,10 @@ export default function ChatInput() {
           <Picker
             searchPlaceholder={{ backgroundColor: "red" }}
             pickerStyle={{
-              skin: 3,
               position: "absolute",
-              height: 250,
-              bottom: "25%",
-              width: "40%",
+              height: 190,
+              bottom: "50%",
+              width: "100%",
               borderColor: "#b3b3df",
             }}
             onEmojiClick={handleEmojiClick}

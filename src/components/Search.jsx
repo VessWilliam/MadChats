@@ -11,7 +11,6 @@ import {
   serverTimestamp,
 } from "firebase/firestore";
 import { db } from "../firebase/firebase";
-import LogoOnPhone from "./LogoOnPhone";
 import UserSearch from "./UserSearch";
 import { useAuth } from "../context/AuthProvider";
 
@@ -83,10 +82,12 @@ export default function Search() {
 
   // console.log(user);
   return (
-    <div className="mx-3 my-3">
+    <div className="mx-4 my-3 rounded-t">
       <div className="relative">
-        <LogoOnPhone />
-        <div className="pb-1 flex items-center ">
+      <h2 className="relative justify-center tracking-[0.5rem] top-1 text-gray-600 uppercase py-4 items-center hidden md:flex lg:flex ">
+          Mad # Tag
+        </h2>
+        <div className="py-3 flex items-center ">
           <span className="relative inset-y-0 left-0 flex items-center pl-2">
             <button
               type="submit"
